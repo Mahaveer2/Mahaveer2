@@ -12,3 +12,7 @@ def about(request):
 
 def tut(request):
     return render(request , 'home/tuts.html')
+
+def error_404(request, exception):
+        data = {}
+        return render(request,'home/404.html', data)
