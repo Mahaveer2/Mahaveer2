@@ -36,5 +36,12 @@
       <div class="tut">
         <a href="#">Dungeon Platformer</a>
       </div>
+      {% for i in data%}
+        
+        <div class="tut">
+          <a href="#">{{ i.post }}<hr>
+            <p style="font-size: 10px;">{{ i.time }}</p></a>
+        </div>
+      {% endfor %}
   </div>
 {% endblock %}
