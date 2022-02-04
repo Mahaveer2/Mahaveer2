@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<body onload="changeClass('.home')"></body>
+  <div class="container">
+      <h1 class="title" align="right" style="font-size: 50px;">My Games!</h1>
+      <div class="grid">
+          <div class="game">
+              <div class="gameInfo">
+                CubeRunner
+                <button class="primary">Download</button>
+              </div>
+          </div>
+          <div class="game">
+            <div class="gameInfo">
+                EscapeCube
+                <button class="primary">Download</button>
+              </div>
+          </div>
+          <div class="game">
+            <div class="gameInfo">
+                ColorBall
+                <button class="primary">Download</button>
+              </div>
+          </div>
+      </div>
+      <h1 class="title" style="margin-top: 50px;" align="left">What's Next</h1>
+      <div class="tut">
+        <a href="#">Racing Game</a>
+      </div>
+      <div class="tut">
+        <a href="#">Zombie Infetion Game</a>
+      </div>
+      <div class="tut">
+        <a href="#">Dungeon Platformer</a>
+      </div>
+  </div>
+{% endblock %}

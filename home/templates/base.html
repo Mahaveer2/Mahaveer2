@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BadSituationStudio | {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+    <a href="#" class='logo'>BadSituationStudio</a>
+    <ul class="ul">
+        <li><a href="{% url 'home' %}" class='home'>Home</a></li>
+        <li><a href="{% url 'about' %}" class='about'>About</a></li>
+        <li><a href="{% url 'tutorials' %}" class='tuts'>Tutorials</a></li>
+    </ul>
+    </nav>
+    {% block content %}
+    {% endblock%}
+</body>
+</html>
+
+<script>
+    function changeClass(tag)
+    {
+        let obj = document.querySelector(tag);
+        obj.classList.add('active');
+    }
+</script>
